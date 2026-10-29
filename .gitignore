@@ -12,6 +12,11 @@ npm-*
 # Build
 /build
 /dist
+/.tools
+/.android-home
+android/app/src/main/assets/www
+android/app/build
+android/.gradle
 /.opt-in
 
 # Generated translation files

@@ -25,7 +25,9 @@ Scratch GUI is a set of React components that comprise the interface for creatin
 
 ## TurboWarp and Xcratch extensions
 
-This mod uses the Xcratch VM fork, which supports Xcratch module extensions and TurboWarp custom extensions. Run `npm install` and `npm start`, then open the editor and choose **Add Extension > Extension Loader**. Paste a direct extension URL, such as a TurboWarp `.js` URL or an Xcratch `.mjs` URL.
+This mod uses the Xcratch VM fork. Run `npm install` and `npm start`, then open the editor and choose **Add Extension > Extension Loader** to paste a URL, or **Load Extension File** to choose a local TurboWarp `.js` or Xcratch `.mjs` file.
+
+Local `.js` extensions run inside the editor page, so only load files you trust.
 
 Extensions can also be preloaded by repeating the `extension` query parameter in the editor URL:
 
@@ -33,7 +35,23 @@ Extensions can also be preloaded by repeating the `extension` query parameter in
 http://localhost:8601/?extension=https%3A%2F%2Fexample.com%2Fextension.js&extension=https%3A%2F%2Fexample.com%2Fmodule.mjs
 ```
 
-The extension URL must be served over HTTP(S) and allow cross-origin requests from the editor.
+Remote `.js` extensions are loaded as scripts over HTTP(S). Xcratch `.mjs` modules must allow cross-origin requests from the editor.
+
+The **File** menu also includes **Package a project with TurboWarp**. It saves the current project as an `.sb3` file and opens the [TurboWarp Packager](https://packager.turbowarp.org/) so you can select that file and export a standalone game.
+
+## Android tablet app
+
+This repository includes a native Android WebView app for using the editor offline on Android tablets. It bundles the built editor, opens `.sb3` projects through Android's file picker, saves projects with the system Save As dialog, and supports the editor's camera and microphone prompts. Network access is only needed for online resources such as remote custom extensions or the TurboWarp Packager.
+
+Requirements: Android Studio with Android SDK Platform 35, JDK 17 or 21, and Node.js. To build an installable debug APK on Windows:
+
+```powershell
+npm run package:android
+```
+
+The APK is written to `../outputs/ScratchMod-android-debug.apk`. Open the `android` folder in Android Studio to build or run the app on a tablet. The APK is debug-signed for local installation; publishing to Google Play requires your own release signing key and store listing.
+
+The Android app targets landscape tablets like the official Scratch editor. Projects stay on the device unless you choose an online feature or export/share one.
 
 To open the current build in your browser on Github Pages:
 
