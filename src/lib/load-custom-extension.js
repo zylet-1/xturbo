@@ -128,6 +128,7 @@ const executeTurboWarpScript = (source, scriptURL, name, url, vm) => {
         let extension = null;
         let settled = false;
         let blobURL = null;
+        let scriptRuntimeError = null;
         const previousScratch = window.Scratch;
         ensureTurboWarpGuiCompatibility(vm);
         ensureRendererOverlaySupport(vm);
@@ -170,7 +171,21 @@ const executeTurboWarpScript = (source, scriptURL, name, url, vm) => {
             script.src = blobURL;
         }
 
+        const captureScriptError = event => {
+            if (!event.filename) return;
+            let eventURL;
+            try {
+                eventURL = new URL(event.filename, window.location.href).href;
+            } catch (error) {
+                eventURL = event.filename;
+            }
+            if (eventURL !== script.src) return;
+            scriptRuntimeError = event.error || new Error(event.message || `Error while running ${name}`);
+        };
+        window.addEventListener('error', captureScriptError, true);
+
         const cleanup = restoreScratch => {
+            window.removeEventListener('error', captureScriptError, true);
             if (restoreScratch) {
                 if (typeof previousScratch === 'undefined') {
                     delete window.Scratch;
@@ -184,6 +199,11 @@ const executeTurboWarpScript = (source, scriptURL, name, url, vm) => {
         script.onload = () => {
             if (settled) return;
             settled = true;
+            if (scriptRuntimeError) {
+                cleanup(true);
+                reject(scriptRuntimeError);
+                return;
+            }
             try {
                 const extensionId = registerTurboWarpExtension(extension, name, url, vm);
                 // TurboWarp extensions can refer to Scratch from block methods after loading.

@@ -647,9 +647,11 @@
 
   // Compiler Patches
   function getExports() {
-    if (vm.exports.i_will_not_ask_for_help_when_these_break) return vm.exports.i_will_not_ask_for_help_when_these_break();
-    else if (vm.exports.JSGenerator && vm.exports.IRGenerator?.exports) return {
-      ...vm.exports, ScriptTreeGenerator: vm.exports.IRGenerator.exports.ScriptTreeGenerator
+    const vmExports = vm.exports;
+    if (!vmExports) return null;
+    if (vmExports.i_will_not_ask_for_help_when_these_break) return vmExports.i_will_not_ask_for_help_when_these_break();
+    else if (vmExports.JSGenerator && vmExports.IRGenerator?.exports) return {
+      ...vmExports, ScriptTreeGenerator: vmExports.IRGenerator.exports.ScriptTreeGenerator
     };
   }
   const exports = getExports();
@@ -1239,10 +1241,13 @@
   })
 
   // Other patches
-  function patchTarget() {
-    // create a target to patch Target.Blocks
-    const target = new vm.exports.RenderedTarget({blocks: null}, runtime);
-
+  function patchTarget(target = runtime.targets[0]) {
+    // Patch the Blocks class from a live target instead of relying on
+    // TurboWarp-only vm.exports.RenderedTarget.
+    if (!target || !target.blocks) {
+      runtime.once("targetWasCreated", patchTarget);
+      return;
+    }
     const Blocks = target.blocks.constructor;
     const oldGetProcDef = Blocks.prototype.getProcedureDefinition;
     Blocks.prototype.getProcedureDefinition = function(name) {
@@ -2197,3 +2202,4 @@
   ext = new SPmbpCST();
   Scratch.extensions.register(ext);
 })(Scratch);
+
