@@ -52,6 +52,8 @@ class Blocks extends React.Component {
     constructor (props) {
         super(props);
         this.ScratchBlocks = VMScratchBlocks(props.vm, false);
+        props.vm.ScratchBlocks = this.ScratchBlocks;
+        window.ScratchBlocks = this.ScratchBlocks;
         bindAll(this, [
             'attachVM',
             'detachVM',
@@ -91,6 +93,8 @@ class Blocks extends React.Component {
     }
     componentDidMount () {
         this.ScratchBlocks = VMScratchBlocks(this.props.vm, this.props.useCatBlocks);
+        this.props.vm.ScratchBlocks = this.ScratchBlocks;
+        window.ScratchBlocks = this.ScratchBlocks;
         this.ScratchBlocks.prompt = this.handlePromptStart;
         this.ScratchBlocks.statusButtonCallback = this.handleConnectionModalStart;
         this.ScratchBlocks.recordSoundCallback = this.handleOpenSoundRecorder;
@@ -716,3 +720,4 @@ export default errorBoundaryHOC('Blocks')(
         mapDispatchToProps
     )(Blocks)
 );
+

@@ -83,6 +83,7 @@ const AppStateHOC = function (WrappedComponent, localesOnly) {
                 initialState,
                 enhancer
             );
+            if (!localesOnly) window.ReduxStore = this.store;
         }
         componentDidUpdate (prevProps) {
             if (localesOnly) return;
@@ -121,3 +122,4 @@ const AppStateHOC = function (WrappedComponent, localesOnly) {
 };
 
 export default AppStateHOC;
+

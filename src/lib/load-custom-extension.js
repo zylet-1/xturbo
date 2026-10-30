@@ -12,6 +12,21 @@ const ensureExtensionLibrary = vm => {
     }
 };
 
+const ensureTurboWarpGuiCompatibility = vm => {
+    const runtime = vm.runtime;
+    if (!runtime.extensionStorage) runtime.extensionStorage = {};
+    if (!runtime.extensionStorage.SPmbpCST) runtime.extensionStorage.SPmbpCST = {};
+
+    const ensureTargetStorage = target => {
+        if (!target.extensionStorage) target.extensionStorage = {};
+    };
+    runtime.targets.forEach(ensureTargetStorage);
+    if (!runtime.__customExtensionTargetStorageListener) {
+        runtime.on('targetWasCreated', ensureTargetStorage);
+        runtime.__customExtensionTargetStorageListener = true;
+    }
+};
+
 const ensureRendererOverlaySupport = vm => {
     const renderer = vm.renderer;
     if (!renderer || (typeof renderer.addOverlay === 'function' && typeof renderer.removeOverlay === 'function')) {
@@ -114,11 +129,21 @@ const executeTurboWarpScript = (source, scriptURL, name, url, vm) => {
         let settled = false;
         let blobURL = null;
         const previousScratch = window.Scratch;
+        ensureTurboWarpGuiCompatibility(vm);
         ensureRendererOverlaySupport(vm);
+        if (vm.ScratchBlocks) window.ScratchBlocks = vm.ScratchBlocks;
         const scratchAPI = {
             vm: vm,
             runtime: vm.runtime,
             renderer: vm.renderer,
+            gui: {
+                getBlockly: () => {
+                    const scratchBlocks = vm.ScratchBlocks || window.ScratchBlocks;
+                    return scratchBlocks ?
+                        Promise.resolve(scratchBlocks) :
+                        Promise.reject(new Error('The Scratch Blocks workspace is not available yet.'));
+                }
+            },
             BlockType: BlockType,
             ArgumentType: ArgumentType,
             Cast: Cast,
@@ -229,3 +254,4 @@ export const loadCustomExtensionFile = (file, vm) => {
     }
     return file.text().then(source => executeTurboWarpScript(source, null, file.name, null, vm));
 };
+
