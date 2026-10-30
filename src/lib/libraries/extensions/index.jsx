@@ -1,5 +1,6 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
+import sharkPoolExtensions from './sharkpool-extensions.json';
 
 import musicIconURL from './music/music.png';
 import musicInsetIconURL from './music/music-small.svg';
@@ -46,7 +47,7 @@ import gdxforInsetIconURL from './gdxfor/gdxfor-small.svg';
 import gdxforConnectionIconURL from './gdxfor/gdxfor-illustration.svg';
 import gdxforConnectionSmallIconURL from './gdxfor/gdxfor-small.svg';
 
-export default [
+const extensionLibraryContent = [
     {
         name: (
             <FormattedMessage
@@ -412,3 +413,18 @@ export default [
         featured: true
     }
 ];
+
+const sharkPoolExtensionCards = sharkPoolExtensions.map(extension => ({
+    name: extension.name.replace(/-/g, ' '),
+    extensionURL: `https://sharkpools-extensions.vercel.app/extension-code/${encodeURIComponent(extension.file)}`,
+    iconURL: `https://sharkpools-extensions.vercel.app/extension-thumbs/${encodeURIComponent(extension.banner)}`,
+    customExtension: true,
+    customExtensionColor: '#00a6ff',
+    customExtensionBadge: 'SharkPool',
+    description: extension.creator ? `${extension.description} · ${extension.creator}` : extension.description,
+    tags: [...extension.tags, 'SharkPool'],
+    featured: true
+}));
+
+export default extensionLibraryContent.concat(sharkPoolExtensionCards);
+

@@ -40,7 +40,7 @@ class LibraryItemComponent extends React.PureComponent {
                     <div className={styles.customExtensionContent}>
                         <span className={styles.customExtensionName}>{this.props.name}</span>
                         <span className={styles.customExtensionDescription}>{this.props.description}</span>
-                        <span className={styles.customExtensionBadge}>TurboWarp</span>
+                        <span className={styles.customExtensionBadge}>{this.props.customExtensionBadge || 'TurboWarp'}</span>
                     </div>
                 </div>
             );
@@ -184,6 +184,7 @@ LibraryItemComponent.propTypes = {
     bluetoothRequired: PropTypes.bool,
     collaborator: PropTypes.string,
     customExtension: PropTypes.bool,
+    customExtensionBadge: PropTypes.string,
     customExtensionColor: PropTypes.string,
     description: PropTypes.oneOfType([
         PropTypes.string,
@@ -218,3 +219,4 @@ LibraryItemComponent.defaultProps = {
 };
 
 export default LibraryItemComponent;
+

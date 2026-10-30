@@ -1,0 +1,849 @@
+[
+  {
+    "name": "Sharktilities",
+    "description": "Various utility blocks for various operations",
+    "creator": "SharkPool",
+    "file": "Sharktilities.js",
+    "banner": "Sharktilities.svg",
+    "tags": [
+      "Utility",
+      "Dangerous",
+      "Math"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Scratch-Utilities",
+    "description": "Blocks for fetching Scratch statistics and assets, inspired by NexusKitten's S-Grab",
+    "creator": "SharkPool",
+    "file": "Scratch-Utilities.js",
+    "banner": "Scratch-Utilities.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Data Management",
+      "Online",
+      "Dangerous"
+    ],
+    "deprecated": true
+  },
+  {
+    "name": "Tune-Shark-V3",
+    "description": "Advanced Audio Engine with complex Sound Control, Audio Effects and more",
+    "creator": "SharkPool",
+    "file": "Tune-Shark-V3.js",
+    "banner": "Tune-Shark-V3.svg",
+    "tags": [
+      "Utility",
+      "Sound",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Tune-Shark",
+    "description": "Outdated Sound Engine for playing sounds. Please use Tune Shark V3",
+    "creator": "SharkPool",
+    "file": "Tune-Shark.js",
+    "banner": "Tune-Shark.svg",
+    "tags": [
+      "Utility",
+      "Sound",
+      "Category Expansion"
+    ],
+    "deprecated": true
+  },
+  {
+    "name": "Camera",
+    "description": "Use Cameras to move the visible part of the Stage",
+    "creator": "SharkPool",
+    "file": "Camera.js",
+    "banner": "Camera.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Added-Motion",
+    "description": "New Motion Blocks",
+    "creator": "SharkPool",
+    "file": "Added-Motion.js",
+    "banner": "Added-Motion.svg",
+    "tags": [
+      "Utility",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Geometry-Dash-API",
+    "description": "Fetch statistics and information from Geometry Dash. Deprecated, expect incorrect values.",
+    "creator": "SharkPool, thank you RobTopGames and GD Colon",
+    "file": "Geometry-Dash-API.js",
+    "banner": "Geometry-Dash-API.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Data Management",
+      "Online"
+    ],
+    "deprecated": true
+  },
+  {
+    "name": "Sound-Waves",
+    "description": "Play various Oscillators in your Project",
+    "creator": "SharkPool",
+    "file": "Sound-Waves.js",
+    "banner": "Sound-Waves.svg",
+    "tags": [
+      "Sound",
+      "Hardware"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Hyper-Sense",
+    "description": "New Sensing Blocks",
+    "creator": "SharkPool",
+    "file": "Hyper-Sense-V2.js",
+    "banner": "Hyper-Sense.svg",
+    "tags": [
+      "Utility",
+      "Data Management",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Popup-Phoenix",
+    "description": "Create and design custom Popups! A remaster of 'Better Input'",
+    "creator": "SharkPool",
+    "file": "Popup-Phoenix.js",
+    "banner": "Popup-Phoenix.svg",
+    "tags": [
+      "Configuration",
+      "Graphics"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Better-Input",
+    "description": "Expansion of the 'Ask and Wait' Block. Deprecated, please use Popup-Phoenix",
+    "creator": "SharkPool",
+    "file": "Better-Input.js",
+    "banner": "Better-Input.svg",
+    "tags": [
+      "Configuration",
+      "Graphics"
+    ],
+    "deprecated": true
+  },
+  {
+    "name": "Camera-Sensing-Plus",
+    "description": "Expansion of the 'Video Sensing' extension. Display the Camera on Sprites and take Photos",
+    "creator": "SharkPool",
+    "file": "Camera-Sensing-Plus.js",
+    "banner": "Camera-Sensing-Plus.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Hardware",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Particle-Engine",
+    "description": "Create customizable and powerful Particle Engines with NO Clones",
+    "creator": "SharkPool",
+    "file": "Particle-Engine.js",
+    "banner": "Particle-Engine.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Data Management"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Particle-Tools",
+    "description": "Tools that make creating Particle Systems easy",
+    "creator": "SharkPool",
+    "file": "Particle-Tools.js",
+    "banner": "Particle-Tools.svg",
+    "tags": [
+      "Utility",
+      "Data Management"
+    ],
+    "deprecated": true
+  },
+  {
+    "name": "Looks-Expanded",
+    "description": "Expansion of the Looks Category",
+    "creator": "SharkPool, CST1229",
+    "file": "Looks-Expanded.js",
+    "banner": "Looks-Expanded.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Sprite-Effects",
+    "description": "Apply SVG Filters to Images, Sprites, and the Canvas! Faster than Image Effects",
+    "creator": "SharkPool",
+    "file": "Sprite-Effects-V2.js",
+    "banner": "Sprite-Effects.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Image-Effects",
+    "description": "Apply a variety of visual effects to Images",
+    "creator": "SharkPool",
+    "file": "Image-Effects.js",
+    "banner": "Image-Effects.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Image-Editor",
+    "description": "Create and modify images and their pixel data",
+    "creator": "SharkPool",
+    "file": "Image-Editor.js",
+    "banner": "Image-Editor.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Data Management"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Pixel-Utilities",
+    "description": "Some Utility Blocks that Roltycore 2's Developer made for some reason",
+    "creator": "LittleBlueGamer",
+    "file": "Pixel-Utilities.js",
+    "banner": "Pixel-Utilities.svg",
+    "tags": [
+      "Utility",
+      "Math"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Recording",
+    "description": "Blocks for Recording your Microphone while your Project runs",
+    "creator": "SharkPool",
+    "file": "Recording-V2.js",
+    "banner": "Recording.svg",
+    "tags": [
+      "Utility",
+      "Sound",
+      "Hardware"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Newgrounds-Audio",
+    "description": "Fetch audio and statistics from Newgrounds. Works best with Tune Shark V3",
+    "creator": "SharkPool",
+    "file": "Newgrounds-Audio.js",
+    "banner": "Newgrounds-Audio.svg",
+    "tags": [
+      "Utility",
+      "Sound",
+      "Data Management",
+      "Online"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Sprite-Parenting",
+    "description": "Link Sprites together and make them follow their parent's movement",
+    "creator": "SharkPool",
+    "file": "Sprite-Parenting.js",
+    "banner": "Sprite-Parenting.svg",
+    "tags": [
+      "Utility"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Rigidbodies",
+    "description": "Fast, math-based Collision detections using Rigidbodies",
+    "creator": "SharkPool",
+    "file": "Rigidbodies.js",
+    "banner": "Rigidbodies.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Math",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Lazy-Collisions",
+    "description": "Utility Blocks that make detecting box Collisions easy and fast",
+    "creator": "SharkPool, Food (contributor)",
+    "file": "Lazy-Collisions.js",
+    "banner": "Lazy-Collisions.svg",
+    "tags": [
+      "Utility",
+      "Math",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Temporary-Variables",
+    "description": "Create Temporary Variables for Sprites, Threads, and the Project",
+    "creator": "SharkPool",
+    "file": "Temporary-Variables.js",
+    "banner": "Temporary-Variables.svg",
+    "tags": [
+      "Utility",
+      "Data Management"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Sty-Lists",
+    "description": "Customize and Organize List Monitors",
+    "creator": "SharkPool",
+    "file": "Sty-Lists.js",
+    "banner": "Sty-Lists.svg",
+    "tags": [
+      "Utility",
+      "Data Management",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Gamepad-Expanded",
+    "description": "Expansion of Garbomuffin's Gamepad Extension",
+    "creator": "DNin01, Meehdrescher",
+    "file": "Gamepad-Expanded.js",
+    "banner": "Gamepad-Expanded.svg",
+    "tags": [
+      "Hardware",
+      "Dangerous"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Tile-Grids",
+    "description": "Position Sprites on Tile Grids",
+    "creator": "SharkPool",
+    "file": "Tile-Grids.js",
+    "banner": "Tile-Grids.svg",
+    "tags": [
+      "Utility"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Animations",
+    "description": "Create Animations and Keyframes in your Project",
+    "creator": "SharkPool",
+    "file": "Animations.js",
+    "banner": "Animations.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Math"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Text-to-Speech-V2",
+    "description": "Generate speech using popular Text-to-Speech models",
+    "creator": "SharkPool",
+    "file": "Text-to-Speech-V2.js",
+    "banner": "Text-to-Speech.svg",
+    "tags": [
+      "Sound",
+      "Online",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Font-Manager",
+    "description": "Manage, Create, and Delete Fonts from your Project",
+    "creator": "SharkPool, 0znzw",
+    "file": "Font-Manager.js",
+    "banner": "Font-Manager.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Data Management",
+      "Configuration"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Script-Control",
+    "description": "Monitor and Control specific Scripts in your Project, inspired by 0znzw",
+    "creator": "SharkPool",
+    "file": "Script-Control.js",
+    "banner": "Script-Control.svg",
+    "tags": [
+      "Utility",
+      "Configuration",
+      "Runtime"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Messages-Plus",
+    "description": "Powerful Message Blocks that work with Vanilla Broadcasts",
+    "creator": "SharkPool",
+    "file": "Messages-Plus.js",
+    "banner": "Messages-Plus.svg",
+    "tags": [
+      "Utility",
+      "Data Management",
+      "Category Expansion",
+      "Runtime"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Advanced-Messages",
+    "description": "New Message Blocks for Advanced, Non-Vanilla Purposes",
+    "creator": "SharkPool",
+    "file": "Advanced-Messages.js",
+    "banner": "Advanced-Messages.svg",
+    "tags": [
+      "Utility",
+      "Data Management",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Runtime-Events",
+    "description": "Detect Events from Runtime",
+    "creator": "SharkPool",
+    "file": "Runtime-Events.js",
+    "banner": "Runtime-Events.svg",
+    "tags": [
+      "Utility",
+      "Category Expansion",
+      "Runtime"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Fetch-Plus",
+    "description": "Fetch and Encode Content from URLs while viewing the Progress and Status of the Fetch",
+    "creator": "SharkPool",
+    "file": "Fetch-Progress.js",
+    "banner": "Fetch-Plus.svg",
+    "tags": [
+      "Data Management",
+      "Online"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Spotify",
+    "description": "Fetch statistics, information, and play songs from Spotify",
+    "creator": "SharkPool",
+    "file": "Spotify.js",
+    "banner": "Spotify.svg",
+    "tags": [
+      "Sound",
+      "Data Management",
+      "Online"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "SoundCloud-API",
+    "description": "Fetch tracks, artists, and statistics from Soundcloud",
+    "creator": "SharkPool",
+    "file": "SoundCloud-API.js",
+    "banner": "SoundCloud-API.svg",
+    "tags": [
+      "Sound",
+      "Data Management",
+      "Online"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Google-Spreadsheets",
+    "description": "Read and Write Google Spreadsheets",
+    "creator": "SharkPool",
+    "file": "Google-Spreadsheets.js",
+    "banner": "Google-Spreadsheets.svg",
+    "tags": [
+      "Utility",
+      "Data Management",
+      "Online"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Money-Utilities",
+    "description": "Convert Currencies and get Currency Information",
+    "creator": "SharkPool",
+    "file": "Money-Utilities.js",
+    "banner": "Money-Utilities.svg",
+    "tags": [
+      "Math",
+      "Online"
+    ],
+    "deprecated": true
+  },
+  {
+    "name": "Display-Text",
+    "description": "Display Text in your Projects, with Markdown Support",
+    "creator": "SharkPool",
+    "file": "Display-Text-V2.js",
+    "banner": "Display-Text.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Color-Master",
+    "description": "Color Utility and Conversion Blocks",
+    "creator": "SharkPool",
+    "file": "Color-Master.js",
+    "banner": "Color-Master.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Math",
+      "Data Management"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "QR-Codes",
+    "description": "Create and Read QR Codes on the Client",
+    "creator": "SharkPool",
+    "file": "QR-Codes.js",
+    "banner": "QR-Codes.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Data Management",
+      "Hardware"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Speech-Bubbles",
+    "description": "Customizable Speech Bubbles",
+    "creator": "SharkPool",
+    "file": "Speech-Bubbles.js",
+    "banner": "Speech-Bubbles.svg",
+    "tags": [
+      "Graphics",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Layer-Control",
+    "description": "Relayer Pen, Video Camera, Backdrops, Sprites and more",
+    "creator": "SharkPool",
+    "file": "Layer-Control.js",
+    "banner": "Layer-Control.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Category Expansion",
+      "Dangerous",
+      "Configuration",
+      "Runtime"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Renderer-Control",
+    "description": "Control the visuals of Pen, Video Camera, Backdrops, Sprites and more",
+    "creator": "SharkPool",
+    "file": "Renderer-Control.js",
+    "banner": "Renderer-Control.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Category Expansion",
+      "Dangerous",
+      "Configuration",
+      "Runtime"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Time-Calculation",
+    "description": "Blocks for calculating Time differences",
+    "creator": "SharkPool",
+    "file": "Time-Calculation.js",
+    "banner": "Time-Calculation.svg",
+    "tags": [
+      "Utility",
+      "Math",
+      "Time"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Timezones",
+    "description": "Convert and get the Time in different Timezones",
+    "creator": "Ammunimium",
+    "file": "Timezones.js",
+    "banner": "Timezones.svg",
+    "tags": [
+      "Utility",
+      "Math",
+      "Time"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Since-2000",
+    "description": "Expansion of the 'since 2000' Blocks",
+    "creator": "Ammunimium, 0znzw",
+    "file": "Since-2000.js",
+    "banner": "Since-2000.svg",
+    "tags": [
+      "Utility",
+      "Math",
+      "Time"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Seeds",
+    "description": "Generate random seeded numbers, generated terrain, and more",
+    "creator": "SharkPool",
+    "file": "Seeds.js",
+    "banner": "Seeds.svg",
+    "tags": [
+      "Utility",
+      "Math"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Perlin-Noise",
+    "description": "Generate randomized Perlin Noise",
+    "creator": "SharkPool",
+    "file": "Perlin-Noise.js",
+    "banner": "Perlin-Noise.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Math"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Extra-Controls",
+    "description": "New Advanced Control Blocks",
+    "creator": "SharkPool",
+    "file": "Extra-Controls.js",
+    "banner": "Extra-Controls.svg",
+    "tags": [
+      "Utility",
+      "Category Expansion",
+      "Runtime"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "More-Operators",
+    "description": "New Powerful Operator Blocks",
+    "creator": "SharkPool",
+    "file": "More-Operators.js",
+    "banner": "More-Operators.svg",
+    "tags": [
+      "Utility",
+      "Category Expansion",
+      "Math"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Captchas",
+    "description": "Simple Client-Based Captchas, this does not promise 100% security",
+    "creator": "SharkPool",
+    "file": "Captchas.js",
+    "banner": "Captchas.svg",
+    "tags": [
+      "Utility",
+      "Dangerous"
+    ],
+    "deprecated": true
+  },
+  {
+    "name": "Better-Comments",
+    "description": "Better Comments with Color and Text Customization",
+    "creator": "SharkPool",
+    "file": "Better-Comments.js",
+    "banner": "Better-Comments.svg",
+    "tags": [
+      "Editor Tool"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Sprite-Panel",
+    "description": "Addon for viewing and managing Sprites and Clones",
+    "creator": "SharkPool, FurryR",
+    "file": "Sprite-Panel.js",
+    "banner": "Sprite-Panel.svg",
+    "tags": [
+      "Utility",
+      "Editor Tool"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "DOM-Selector",
+    "description": "Read Elements and Create Events from the website HTML",
+    "creator": "SharkPool",
+    "file": "DOM-Selector.js",
+    "banner": "DOM-Selector.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Data Management",
+      "Configuration"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "SVG-Spritesheets",
+    "description": "Create and Export SVG Spritesheets",
+    "creator": "SharkPool",
+    "file": "SVG-Spritesheets.js",
+    "banner": "SVG-Spritesheets.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Data Management"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Community-Spotlight",
+    "description": "Display and Promote Projects for free",
+    "creator": "SharkPool, Community Spotlight Team",
+    "file": "Community-Spotlight.js",
+    "banner": "Community-Spotlight.svg",
+    "tags": [
+      "Graphics",
+      "Sound",
+      "Data Management",
+      "Online"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "GIF-Manager",
+    "description": "Create and Split GIF Frames",
+    "creator": "SharkPool",
+    "file": "GIF-Manager.js",
+    "banner": "GIF-Manager.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Data Management"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Swift-JSON",
+    "description": "Super Fast JSON and Array extension",
+    "creator": "SharkPool",
+    "file": "JSON-Array.js",
+    "banner": "JSON-Array.svg",
+    "tags": [
+      "Utility",
+      "Data Management",
+      "Math",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Turbo-Skins",
+    "description": "Improved Skins extension, inspired by LilyMakesThings",
+    "creator": "SharkPool",
+    "file": "Turbo-Skins.js",
+    "banner": "Turbo-Skins.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Configuration",
+      "Runtime"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Scenes",
+    "description": "Create Scenes (savestates), like Unity, in your Project",
+    "creator": "SharkPool",
+    "file": "Scenes.js",
+    "banner": "Scenes.svg",
+    "tags": [
+      "Utility",
+      "Editor Tool",
+      "Configuration"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "Pen-Papers",
+    "description": "Create Multiple Pen Layers! Inspired by ObviousAlex",
+    "creator": "SharkPool",
+    "file": "Pen-Papers.js",
+    "banner": "Pen-Papers.svg",
+    "tags": [
+      "Utility",
+      "Graphics",
+      "Category Expansion"
+    ],
+    "deprecated": false
+  },
+  {
+    "name": "MIDI-Tools",
+    "description": "Utilities For Making Midi Notes Into Functions",
+    "creator": "ObscuraPH",
+    "file": "MIDI-Tools.js",
+    "banner": "MIDI-Tools.svg",
+    "tags": [
+      "Utility",
+      "Sound",
+      "Data Management",
+      "Hardware"
+    ],
+    "deprecated": false
+  }
+]
+

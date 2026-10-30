@@ -113,6 +113,7 @@ class LibraryItem extends React.PureComponent {
                 bluetoothRequired={this.props.bluetoothRequired}
                 collaborator={this.props.collaborator}
                 customExtension={this.props.customExtension}
+                customExtensionBadge={this.props.customExtensionBadge}
                 customExtensionColor={this.props.customExtensionColor}
                 description={this.props.description}
                 disabled={this.props.disabled}
@@ -144,6 +145,7 @@ LibraryItem.propTypes = {
     bluetoothRequired: PropTypes.bool,
     collaborator: PropTypes.string,
     customExtension: PropTypes.bool,
+    customExtensionBadge: PropTypes.string,
     customExtensionColor: PropTypes.string,
     description: PropTypes.oneOfType([
         PropTypes.string,
@@ -176,3 +178,4 @@ LibraryItem.propTypes = {
 };
 
 export default injectIntl(LibraryItem);
+

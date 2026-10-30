@@ -194,6 +194,7 @@ class LibraryComponent extends React.Component {
             bluetoothRequired={data.bluetoothRequired}
             collaborator={data.collaborator}
             customExtension={data.customExtension}
+            customExtensionBadge={data.customExtensionBadge}
             customExtensionColor={data.customExtensionColor}
             description={data.description}
             disabled={data.disabled}
@@ -343,3 +344,4 @@ LibraryComponent.defaultProps = {
 };
 
 export default injectIntl(LibraryComponent);
+
