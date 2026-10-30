@@ -401,6 +401,17 @@ const extensionLibraryContent = [
         featured: true
     },
     {
+        name: 'Microbit More',
+        extensionURL: 'https://microbit-more.github.io/dist/microbitMore.mjs',
+        iconURL: microbitIconURL,
+        customExtension: true,
+        customExtensionColor: '#22a5c7',
+        customExtensionBadge: 'Xcratch',
+        description: 'Extra micro:bit sensor and pin blocks. Bluetooth support depends on the browser.',
+        tags: ['micro:bit', 'Bluetooth', 'hardware', 'Xcratch'],
+        featured: true
+    },
+    {
         name: 'Extension Loader',
         description: 'Load a TurboWarp or Xcratch extension from a URL.',
         extensionLoader: true,
